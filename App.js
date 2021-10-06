@@ -17,15 +17,15 @@ export default class App extends React.Component {
 }
 
 const TabNavigator = createBottomTabNavigator({
-  EnterDetails: EnterDetails,
-  ReadDetails: ReadDetails
+  IngresarDetalles: EnterDetails,
+  LeerDetalles: ReadDetails
 },
 {
   defaultNavigationOptions: ({navigation})=>({
     tabBarIcon: ()=>{
       const routeName = navigation.state.routeName;
       console.log(routeName)
-      if(routeName === "EnterDetails"){
+      if(routeName === "IngresarDetalles"){
         return(
           <Image
           source={require("./assets/job1.png")}
@@ -34,7 +34,7 @@ const TabNavigator = createBottomTabNavigator({
         )
         
       }
-      else if(routeName === "ReadDetails"){
+      else if(routeName === "LeerDetalles"){
         return(
           <Image
           source={require("./assets/job2.webp")}
