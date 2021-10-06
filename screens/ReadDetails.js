@@ -5,7 +5,7 @@ export default class ReadDetails extends React.Component {
     render(){
         return(
             <View style={styles.container}>
-                <Text>Job Seeker Profile!!</Text>
+                <Text>Pérfil del solicitante</Text>
             </View>
         );
     }
